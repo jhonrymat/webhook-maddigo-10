@@ -160,7 +160,7 @@ class MessageController extends Controller
                         $message->data = '';
                         $message->save();
 
-
+.
                         Webhook::dispatch($message, false);
                     }
                     // Process media messages
